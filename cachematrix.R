@@ -34,6 +34,7 @@ cacheSolve <- function(x, ...) {
     return(r)
   }
   data <- x$get()
+  # inverse of X will be calculated if r doesn't have a value
   r <- solve(data, ...)
   x$setinverse(r)
   r
